@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+
+/* ================= CSS DO CORPO =================*/
+*
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body
+{
+   text-align: center;
+   
+   font-family: 'Open Sans', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   color: #fff;
+   padding: 0;
+   margin: 0;
+   
+}
+
+.container
+{
+   width: 80%;
+   margin: 0 auto;
+   
+}
+
+body h1
+{
+   font-size: 40px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   word-spacing: 2px;
+   text-align: center
+   
+}
+
+body p
+{
+   line-height: 1.8em;
+   font-size: 18px;
+   color: #eee;
+   letter-spacing: 1px;
+   font-weight: 300;
+   margin: 50px auto;
+
+}
+
+button
+{
+   font-family: 'Open Sans',  sans-serif;
+   padding: 9px 40px;
+   border: none;
+   background: #fff;
+   font-size: 15px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   border-bottom: 2px solid #ddd;
+   color: #4089A6;
+   font-weight: 400;
+   text-transform: uppercase;
+   cursor: pointer;
+   display: inline-block;
+   
+}
+
+
+button.home
+{
+   color: #3bb17c;
+   position: center;
+   
+}
+
+section
+{
+   padding: 30px 0;
+   margin: 0;
+   position: absolute;
+   overflow: hidden;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   overflow: scroll;
+}
+
+section.main
+{
+   background: #4089A6;
+   height: 100vh;
+   z-index: 99;
+   border-top: 1px solid #4089A6;
+   border-bottom: 1px solid #4089A6;
+}
+
+section.aboutSection
+{
+   background: #3bb17c;
+   height: 2px;
+   padding: 0;
+   top: 50vh;
+   left: 50%;
+   width: 5px;
+   display: none;
+   border-top: 1px solid #3bb17c;
+   border-bottom: 1px solid #3bb17c;
+   
+}
+
+/* ====================================CSS DA LISTA DE EXIBIÇÃO===================================*/
+form input {
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #3bb17c;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin: 5px 2px;
+    
+}
+
+.app {
+   width: 100%;
+   max-width: 1180px;
+   padding: 0 30px;
+   margin: 32px auto;
+   
+   
+
+   background: #3bb17c;
+}
+
+.app .content-form{
+   width: 100%;
+   padding: 15px;
+   background: 4ec28e ;
+   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   
+   
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.app form{
+   width: 100%;
+   max-width: 700px;
+}
+
+.app .content-list{
+   width: 100%;
+   margin: 15px auto;
+   
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.app .content-list .content-list-container{
+   width: 100%;
+   max-width: 700px;
+   margin: 32px auto;
+   
+}
+
+.app .content-list ul{
+   display: grid;
+   grid-gap: 24px;
+   list-style: none;
+}
+
+.app .content-list ul li{
+   background: #fff;
+   padding: 24px;
+   border-radius: 8px;
+   position: relative;
+   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.app .content-list ul li strong{
+   display: block;
+   margin-bottom: 16px;
+   color: #41414d
+}
+
+.app .content-list ul li strong{
+   display: block;
+   font-size: 18px;
+   margin-bottom: 10px;
+   color: #41414d
+}
+
+.app .content-list ul li p{
+   color: #737380;
+   line-height: 21px;
+   font-size: 16px;
+   margin-bottom: 10px;
+}
+
+/* FUNDO DAS LETRAS,*/
+.app .content-list ul li a{
+   height: 30px;
+   padding: 5px;
+   background: #40a695;
+   border: 0;
+   border-radius: 2px;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   font-size: 14px;
+   margin: 0 5px;
+   transition: filter 0.2s;
+}
+
+.app .content-list ul li a:hover{
+   filter: brightness(90%)
+}
+
+
+/* =============== CSS DOS FAVORITOS  ==========================*/
+
+.dropdown {
+   display: inline-block;
+   position: relative;
+   align-items: center;
+ }
+ /* BUTAO PRINCIPAL*/
+ 
+ .dropdown_btn {
+   background: #18bc9c;
+   display: inline-block;
+   font-family: "Righteous", cursive;
+   border: 0;
+   outline: none;
+   font-size: 18px;
+   text-transform: uppercase;
+   padding: 0 50px 0 15px;
+   border-radius: 10px;
+   color: #fff;
+   letter-spacing: 2px;
+   line-height: 45px;
+   cursor: pointer;
+   border-bottom: 3px solid #128f76;
+   overflow: hidden;
+   position: relative;
+ }
+ .dropdown_btn:before, .dropdown_btn:after {
+   display: inline-block;
+   font: normal normal normal 14px/1 FontAwesome;
+   font-size: inherit;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   transition: all 0.2s linear;
+ }
+ .dropdown_btn:before {
+   content: "⌵";
+   position: absolute;
+   right: 0;
+   top: 0;
+   display: block;
+   height: 45px;
+   width: 40px;
+   text-align: center;
+   line-height: 45px;
+ }
+ .dropdown_btn:after {
+   content: "︿";
+   position: absolute;
+   right: 0;
+   top: -100%;
+   display: block;
+   height: 45px;
+   width: 40px;
+   text-align: center;
+   line-height: 45px;
+ }
+ .dropdown_btn:hover:before, .dropdown_btn:hover:after {
+   background: #15a589;
+   box-shadow: 2px 0 1px rgba(255, 0, 0, 0.05) inset;
+ }
+ .dropdown_btn:focus:before {
+   background: #15a589;
+   box-shadow: 2px 0 1px rgba(0, 0, 0, 0.05) inset;
+   top: 100%;
+ }
+ .dropdown_btn:focus:after {
+   background: #15a589;
+   box-shadow: 2px 0 1px rgba(0, 0, 0, 0.05) inset;
+   top: 0%;
+ }
+ .dropdown_menu {
+ 
+   background: #128f76;
+   position: absolute;
+   width: 12%;
+   top: 55px;
+   left: -100px;
+   opacity: 0;
+   transition: all 0.5s ease-in-out;
+   border-radius: 10px;
+   align-items: center;
+ }
+ 
+ .dropdown_menu a:first-child {
+   border-radius: 10px 10px 0 0;
+ }
+ .dropdown_menu a:last-child {
+   border-bottom: 0;
+   border-radius: 0 0 10px 10px;
+ }
+ .dropdown_menu a:hover {
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.16) inset;
+   background: #18bc9c;
+ }
+ .dropdown .dropdown_btn:focus + .dropdown_menu, .dropdown .dropdown_btn:focus + .dropdown_menu:hover {
+   left: 0;
+   opacity: 1;
+   pointer-events: inherit;
+ }
+ 
+ 
+ 
+ 
+ /*========================================*/
+ 
+ 
+ .dropdown {
+   display: flex;
+   font-family: "Righteous", cursive;
+ }
+
+ .conteudo {
+   
+   text-align: center;
+   
+ }
+ 
+ #listaTarefas {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ #listaTarefas li {
+   display: block;
+   line-height: 25px;
+   padding: 0 15px;
+   text-decoration: none;
+   color: #fff;
+   letter-spacing: 2px;
+   transition: all 0.2s linear;
+   overflow: hidden;
+   border-bottom: 1px solid #0f7864;
+ }
+ 
+ .btnAcao {
+   
+   border-radius: 6px;
+   border: 1px solid #4089A6;
+   cursor: pointer;
+   background: #ff0808;
+   color: rgb(32, 13, 13);
+   outline: none;
+   
+   position: top;
+ }
+ 
+
+
+

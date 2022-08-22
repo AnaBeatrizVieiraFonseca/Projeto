@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Explorar Perfil - GitHub</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><link rel="stylesheet" href="./style.css"> 
+
+</head>
+
+<body>
+   <main>
+      <section class="main">
+         <div class="container mainContent">
+         
+               <h1>Explore perfis no GitHub</h1>
+               <p>Bem vindo! A busca de Repositório retorna, mediante a inserção do nome do usuário, não só o perfil procurado com seus respectivos detalhes como também os projetos da plataforma citada acima. Caso o programa não encontre o user requisitado, reveja os possiveis erros de ortografia e/ou coloque o nome completo do usuário assim como no aplicativo. No site é possivel favoritar o perfil do usuário, deletar além de ver detalhes do projeto em desenvolvimento. Clique no botão para prosseguir e em "voltar" para retornar a essa tela</p>   
+               <button id="btn" class="about">Seguir</button>
+         </div>
+      </section>
+   </main>
+
+<!--  ====================================== FAVORITOS - PAG2 ========================================-->
+
+   <section class="aboutSection">
+      <div class="drop">
+         <div class="dropdown">
+            <button class="dropdown_btn">Favoritos</button>
+            <div class="dropdown_menu">
+               <ul id="listaTarefas">
+               </ul>
+         
+            </div>
+         </div>
+
+      <ul id="listaTarefas">
+      </ul>
+      </div>   
+
+<!--  =========== BUSCAR USER + BOTÃO=================-->
+
+      <h1>BUSCAR USUÁRIO DO GITHUB</h1>
+      <div id="app" class="app">
+         <div class="content-form">  
+            <form>
+               <input type="" id="input_user" placeholder="Usuário do Github" />
+            </form>
+         </div>
+
+         <div class="content-list">
+            <div class="content-list-container">
+               <ul></ul>
+            </div>
+         </div>
+      </div>
+      <div class="container aboutContent">
+            
+         <button class="home">Voltar</button>
+         <button id="but" class="btn-app">Buscar</button>
+         <button id="favorito" >Favoritar</button>
+      </div>
+   </section>
+
+   <script  src="script.js"></script>
+</body>
+</html>
